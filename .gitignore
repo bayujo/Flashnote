@@ -1,0 +1,60 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Xcode
+## Build generated
+build/
+DerivedData/
+
+## User-specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Obj-C/Swift specific
+*.swp
+*.lock
+*.tmp
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+.build/
+# Note: Package.resolved is tracked for app targets (locks dependency versions)
+
+# CocoaPods (in case added later)
+Pods/
+
+# Carthage (in case added later)
+Carthage/Build/
+Carthage/Checkouts
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Claude Code tooling
+.agents/
+skills-lock.json
+.claude/
