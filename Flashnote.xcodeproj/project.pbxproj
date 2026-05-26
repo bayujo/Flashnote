@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E72B3A562F612DD500A9EC11 /* SDWebImagePhotosPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E72B3A552F612DD500A9EC11 /* SDWebImagePhotosPlugin */; };
+		E72B3A592F612DFA00A9EC11 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E72B3A582F612DFA00A9EC11 /* SDWebImage */; };
+		E72B3A5B2F612DFA00A9EC11 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E72B3A5A2F612DFA00A9EC11 /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E7E77CCA2F5E92830061BCEA /* Flashnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72B3A592F612DFA00A9EC11 /* SDWebImage in Frameworks */,
+				E72B3A5B2F612DFA00A9EC11 /* SDWebImageMapKit in Frameworks */,
+				E72B3A562F612DD500A9EC11 /* SDWebImagePhotosPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = Flashnote;
 			packageProductDependencies = (
+				E72B3A552F612DD500A9EC11 /* SDWebImagePhotosPlugin */,
+				E72B3A582F612DFA00A9EC11 /* SDWebImage */,
+				E72B3A5A2F612DFA00A9EC11 /* SDWebImageMapKit */,
 			);
 			productName = Flashnote;
 			productReference = E7E77CCA2F5E92830061BCEA /* Flashnote.app */;
@@ -94,6 +106,10 @@
 			);
 			mainGroup = E7E77CC12F5E92830061BCEA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E72B3A542F612DD500A9EC11 /* XCRemoteSwiftPackageReference "SDWebImagePhotosPlugin" */,
+				E72B3A572F612DFA00A9EC11 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E7E77CCB2F5E92830061BCEA /* Products */;
 			projectDirPath = "";
@@ -251,8 +267,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36J8TBMX5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Flashnote uses the camera to capture visual reminders.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Flashnote uses the camera to capture visual reminders.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +301,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36J8TBMX5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Flashnote uses the camera to capture visual reminders.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Flashnote uses the camera to capture visual reminders.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +350,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E72B3A542F612DD500A9EC11 /* XCRemoteSwiftPackageReference "SDWebImagePhotosPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImagePhotosPlugin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		E72B3A572F612DFA00A9EC11 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E72B3A552F612DD500A9EC11 /* SDWebImagePhotosPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E72B3A542F612DD500A9EC11 /* XCRemoteSwiftPackageReference "SDWebImagePhotosPlugin" */;
+			productName = SDWebImagePhotosPlugin;
+		};
+		E72B3A582F612DFA00A9EC11 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E72B3A572F612DFA00A9EC11 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E72B3A5A2F612DFA00A9EC11 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E72B3A572F612DFA00A9EC11 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7E77CC22F5E92830061BCEA /* Project object */;
 }
